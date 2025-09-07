@@ -7,7 +7,7 @@ struct Student
 {
     string name;
     int roll;
-    float marks[5]; // 5subjects
+    float marks[6]; // 6 subjects
 };
 
 int main()
@@ -29,7 +29,7 @@ int main()
         cin >> students[i].roll;
 
         cout << "Enter marks of 5 subjects: ";
-        for (int j = 0; j < 5; j++)
+        for (int j = 0; j < 6; j++)
         {
             cin >> students[i].marks[j];
         }
@@ -40,11 +40,11 @@ int main()
     for (int i = 0; i < n; i++)
     {
         float total = 0;
-        for (int j = 0; j < 5; j++)
+        for (int j = 0; j < 6; j++)
         {
             total += students[i].marks[j];
         }
-        float average = total / 5;
+        float average = total / 6;
 
         cout << "\nName: " << students[i].name;
         cout << "\nRoll No: " << students[i].roll;
